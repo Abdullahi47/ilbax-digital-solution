@@ -2,6 +2,8 @@ import { useState } from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { buildContactMessage, openWhatsApp } from "../utils/whatsapp.js";
 import ImageFeature from "../components/ImageFeature.jsx";
+import Seo from "../components/Seo.jsx";
+import { pages } from "../data/seo.js";
 
 const initialState = { name: "", email: "", phone: "", subject: "", message: "" };
 
@@ -26,6 +28,7 @@ export default function Contact() {
 
   return (
     <section className="section-pad bg-light">
+      <Seo {...pages.contact} />
       <div className="container-pad grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
         <div>
           <p className="eyebrow">Nala Xiriir</p>

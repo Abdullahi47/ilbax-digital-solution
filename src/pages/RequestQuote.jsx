@@ -1,10 +1,13 @@
 import WhatsAppForm from "../components/WhatsAppForm.jsx";
 import { FaClock, FaLock, FaWhatsapp } from "react-icons/fa";
 import ImageFeature from "../components/ImageFeature.jsx";
+import Seo from "../components/Seo.jsx";
+import { pages } from "../data/seo.js";
 
 export default function RequestQuote() {
   return (
     <section className="section-pad bg-light">
+      <Seo {...pages.quote} />
       <div className="container-pad grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
         <div>
           <p className="eyebrow">Hel Qiimeyn Bilaash ah</p>

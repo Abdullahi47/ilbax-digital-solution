@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import Seo from "../components/Seo.jsx";
 
 export default function NotFound() {
   return (
     <section className="grid min-h-[65vh] place-items-center bg-light px-4 py-20 text-center">
+      <Seo title="Boggan lama helin" description="Bogga aad raadineyso ma jiro." path="/" noindex />
       <div>
         <p className="eyebrow">404</p>
         <h1 className="mt-3 text-4xl font-black text-navy sm:text-5xl">Boggan lama helin</h1>

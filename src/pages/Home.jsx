@@ -8,6 +8,8 @@ import StatsStrip from "../components/StatsStrip.jsx";
 import Faq from "../components/Faq.jsx";
 import ImageFeature from "../components/ImageFeature.jsx";
 import { processSteps, projects, testimonials } from "../data/site.js";
+import Seo from "../components/Seo.jsx";
+import { organizationJsonLd, pages } from "../data/seo.js";
 
 const reasons = [
   "Koox fahamsan suuqa Soomaaliya iyo baahida ganacsiyada casriga ah.",
@@ -18,6 +20,7 @@ const reasons = [
 export default function Home() {
   return (
     <>
+      <Seo {...pages.home} jsonLd={organizationJsonLd} />
       <section className="relative overflow-hidden bg-navy text-white">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(0,185,232,0.18),transparent_42%),radial-gradient(circle_at_80%_15%,rgba(255,255,255,0.14),transparent_28%)]" />
@@ -27,7 +30,7 @@ export default function Home() {
           <motion.div initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="eyebrow">ILBAX Digital Solution</p>
             <h1 className="mt-5 max-w-4xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
-              Xalal Dhamaystiran oo Dhijitaal ah
+              Website iyo Branding Mogadishu — Xalal Dhamaystiran oo Dhijitaal ah
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/78 sm:text-lg">
               Waxaan ganacsiyada, hay'adaha iyo shaqsiyaadka ka caawinnaa inay ku kobcaan adeegyo dijitaal oo casri ah, tayo sare leh, isla markaana la jaanqaadaya baahidooda.

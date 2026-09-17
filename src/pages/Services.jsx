@@ -4,10 +4,13 @@ import { services } from "../data/services.js";
 import SectionHeader from "../components/SectionHeader.jsx";
 import Faq from "../components/Faq.jsx";
 import ImageFeature from "../components/ImageFeature.jsx";
+import Seo from "../components/Seo.jsx";
+import { pages } from "../data/seo.js";
 
 export default function Services() {
   return (
     <>
+      <Seo {...pages.services} />
       <section className="section-pad bg-light">
         <div className="container-pad">
           <div className="mx-auto max-w-3xl text-center">

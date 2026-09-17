@@ -3,10 +3,13 @@ import { FaCheckCircle, FaLightbulb, FaMapMarkerAlt, FaUsers } from "react-icons
 import SectionHeader from "../components/SectionHeader.jsx";
 import StatsStrip from "../components/StatsStrip.jsx";
 import ImageFeature from "../components/ImageFeature.jsx";
+import Seo from "../components/Seo.jsx";
+import { pages } from "../data/seo.js";
 
 export default function About() {
   return (
     <>
+      <Seo {...pages.about} />
       <section className="section-pad bg-light">
         <div className="container-pad grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <motion.div initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
